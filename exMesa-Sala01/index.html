@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesa de Trabalho - Aula 14</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   
+
+    <section>
+        <form
+        class="form-vendas"
+        action=""
+        method="GET"
+        >
+            <fieldset class="form-sections">
+
+        
+                <legend class="form-legends">
+                    Informações Pessoais
+                </legend>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="name"
+                    >
+                        Nome
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Informe seu primeiro nome"
+                    required
+                    >
+                </div>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="surname"
+                    >
+                        Sobrenome
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Informe seu sobrenome"
+                    required
+                    >
+                </div>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="phone"
+                    >
+                        Telefone
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="(00) 0000-0000"
+                    required
+                    >
+                </div>
+            </fieldset>
+            <fieldset class="form-sections">
+                <legend class="form-legends">
+                    Informações de Entrega
+                </legend>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="address-street"
+                    >
+                        Logradouro
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="address-street"
+                    id="address-street"
+                    placeholder="Informe o logradouro"
+                    required
+                    >
+                </div>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="address-number"
+                    >
+                        Número
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="address-number"
+                    id="address-number"
+                    placeholder="Informe o número"
+                    required
+                    >
+                    <label
+                    class="form-labels"
+                    for="address-comp"
+                    >
+                        Complemento
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="address-comp"
+                    id="address-comp"
+                    placeholder="Informe o complemento"
+                    >
+                </div>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="neighborhood"
+                    >
+                        Bairro
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="neighborhood"
+                    id="neighborhood"
+                    placeholder="Informe o bairro"
+                    required
+                    >
+                </div>
+                <div class=form-lines>
+                    <label
+                    class="form-labels"
+                    for="city"
+                    >
+                        Cidade
+                    </label>
+                    <input
+                    class="form-fields"
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Informe a cidade"
+                    required
+                    >
+                </div>
+            </fieldset>
+            <fieldset class="form-sections">
+                <legend>
+                    Informações da Encomenda
+                </legend>
+                    <div class="options">
+                        <div class=form-lines>
+                            <div class="form-items">
+                                <label for="brigadeiro">
+                                    Brigadeiro
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="brigadeiro"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="beijinho">
+                                    Beijinho
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id = "beijinho"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-lines">
+                            <div class="form-items">
+                                <label for="bolo-pote">
+                                    Bolo de Pote
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="bolo-pote"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="bolo-pedaço">
+                                    Bolo Pedaço
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="bolo-pedaço"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-lines">
+                            <div class="form-items">
+                                <label for="tortas-doces">
+                                    Tortas Doces
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="tortas-doces"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="cookies">
+                                    Cookies
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="cookies"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-lines">
+                            <div class="form-items">
+                                <label for="cheesecakes">
+                                    Cheesecakes
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="cheesecakes"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="doces-caseiros">
+                                    Doces caseiros
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="doces-caseiros"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-lines">
+                            <div class="form-items">
+                                <label for="pao-de-mel">
+                                    Pão de Mel
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="pao-de-mel"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="brownies">
+                                    Brownies
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="brownies"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-lines">
+                            <div class="form-items">
+                                <label for="cupcakes">
+                                    Cupcakes
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="cupcakes"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                            <div class="form-items">
+                                <label for="macarons">
+                                    Macarons
+                                </label>
+                                <input
+                                type="number" class="qtd"
+                                value="0"
+                                id="macarons"
+                                min="0"
+                                max="99"
+                                maxlength="2"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-sections buttons">
+                <button type="submit">Enviar formulário de pré-encomenda</button>
+            </div>
+        </form>
+    </section>
+
+    <span>
+        <img src="./img/picture-2.png" alt="">
+    </span>
+</body>
