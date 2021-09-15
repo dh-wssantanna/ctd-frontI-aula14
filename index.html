@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 14 - Personalizando formulários</title>
+</head>
+<body>
+    <section>
+        <h2 class="cabecalho__titulo">Pesquisa de Satisfação</h2>
+        <h3 class="cabecalho__subtitulo">Todos os campos são necessários.</h3>
+        <form class="formulario" action="" method="GET">
+            <!--
+                fieldset permite agrupar quando existem vários elementos do formulário associados.
+                Obs.: Cada fieldset deve ter uma legenda.
+            -->
+            <fieldset class="formulario__grupo">
+                <!--
+                    legend: É o texto que descreve o grupo dos elementos do formulário.
+                -->
+                <legend class="formulario__legenda">Identificação</legend>
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="nome">Nome</label>
+                    <input 
+                        class="formulario__campo" 
+                        type="text" 
+                        name="nome"
+                        id="nome"
+                        placeholder="Preencha com seu primeiro nome"
+                        required
+                    >
+                </div>
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="sobrenome">Sobrenome</label>
+                    <input 
+                        class="formulario__campo" 
+                        type="text"
+                        name="sobrenome"
+                        id="sobrenome" 
+                        placeholder="Preenha com seu sobrenome"
+                        required
+                    >
+                </div>
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="genero">Genero</label>
+                    <select name="genero" id="genero">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros" selected>Prefiro não informar</option>
+                    </select>
+                </div>
+                <div class="formulario__linha">
+                    <label class="formulario__rotulo" for="aniversario">Data de Aniversário</label>
+                    <!-- 
+                        type="date" permite trabalhar com tipos data
+                        min: a partir de que data o campo irá permitir guardar a data.
+                        max: até que data o campo irá permitir guardar a data.
+                    -->
+                    <input 
+                        type="date" 
+                        name="aniversario" 
+                        id="aniversario" 
+                        min="1900-01-01" 
+                        max="2000-01-01"
+                    >
+                </div>
+            </fieldset>
+            <fieldset class="formulario__grupo">
+                <legend>Veículo</legend>
+                <select name="veiculo" id="veiculo">
+                    <option disabled selected>Escolha um veículo</option>
+                    <optgroup label="Fiat">
+                        <option value="argo">Argo</option>
+                        <option value="uno">Uno</option>
+                        <option value="cronos">Cronos</option>
+                        <option value="toro">Toro</option>
+                    </optgroup>
+                    <optgroup label="Nissan">
+                        <option value="kicks">Kicks</option>
+                        <option value="frontier">Frontier</option>
+                        <option value="leaf">Leaf</option>
+                        <option value="versa">Versa</option>
+                    </optgroup>
+                    <optgroup label="Volkswagen">
+                        <option value="golf">Golf</option>
+                        <option value="jetta">Jetta</option>
+                        <option value="gold">Gol</option>
+                        <option value="nivus">Nivus</option>
+                    </optgroup>
+                    <optgroup label="Chevrolet">
+                        <option value="onix">Onix</option>
+                        <option value="tracker">Tracker</option>
+                        <option value="montana">Montana</option>
+                        <option value="cruze">Cruze</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset class="formulario__grupo">
+                <legend>Questionário</legend>
+                <section class="questao__linha">
+                    <h4>Você costuma ou pretende trocar de carro em quanto tempo?</h4>
+                    <div class="formulario__linha">
+                        <input type="radio" name="questao1" id="resposta11" value="1">
+                        <label for="resposta11">Eu gostaria de ter um carro diferente todo mês!</label>
+                    </div>
+                    <div class="formulario__linha">
+                        <input type="radio" name="questao1" id="resposta12" value="2">
+                        <label for="resposta12">Acho que em pelo menos 2 anos e não mais que 4.</label>
+                    </div>
+                    <div class="formulario__linha">
+                        <input type="radio" name="questao1" id="resposta13" value="3">
+                        <label for="resposta13">Depende, se o carro já não estiver me atendendo mais ou muito rodado.</label>
+                    </div>
+                </section>
+            </fieldset>
+            <div class="formulario__linha">
+                <div>
+                    <input type="checkbox" name="termos" id="termos" value="termos">
+                    <label for="termos">Você concorda que a gente utilize esse as informações para gerar uma melhor experiências.</label>
+                </div>
+            </div>
+        </form>
+    </section> 
+</body>
+</html>
